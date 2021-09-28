@@ -14,11 +14,6 @@ const Home = () => {
     setCustomer(result.data.reverse());
   };
 
-  // const deleteCustomer = async id => {
-  //   await axios.delete(`http://localhost:3003/users/${id}`);
-  //   displayCustomers();
-  // };
-
   return (
     <div className="container">
       <div className="py-4">
@@ -52,12 +47,7 @@ const Home = () => {
                   >
                     Edit
                   </Link>
-                  {/* <Link
-                    class="btn btn-danger"
-                    onClick={() => deleteCustomer(user.id)}
-                  >
-                    Delete
-                  </Link> */}
+                  
                 </td>
               </tr>
             ))}
